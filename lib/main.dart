@@ -11,7 +11,21 @@ class BusinessCardApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(),
+      home: Scaffold(
+        backgroundColor: Colors.black,
+        body: Column(
+          children: [
+            CircleAvatar(
+              radius: 110,
+              child: CircleAvatar(
+                radius: 108,
+                backgroundImage:
+                    AssetImage("Assets/Images/received_4891786670929918.jpeg"),
+              ),
+            )
+          ],
+        ),
+      ),
     );
   }
 }
