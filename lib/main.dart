@@ -13,7 +13,9 @@ class BusinessCardApp extends StatelessWidget {
       theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       home: const Scaffold(
+        backgroundColor: Colors.blueGrey,
         body: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
           children: [
             CircleAvatar(
               radius: 110,
@@ -74,7 +76,15 @@ class BusinessCardApp extends StatelessWidget {
                   ),
                 ),
               ),
-            )
+            ),
+            SizedBox(
+              height: 8,
+            ),
+            CustomCard(
+              text: "kasrawyali47@gmail.com",
+              icon: Icons.email,
+              color: Colors.black,
+            ),
           ],
         ),
       ),
