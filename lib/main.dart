@@ -36,7 +36,13 @@ class BusinessCardApp extends StatelessWidget {
                 fontSize: 18,
                 color: Colors.grey,
               ),
-            )
+            ),
+            Divider(
+              endIndent: 60,
+              indent: 60,
+              thickness: 1,
+              color: Colors.grey,
+            ),
           ],
         ),
       ),
