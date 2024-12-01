@@ -10,9 +10,9 @@ class BusinessCardApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData.dark(),
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.black,
         body: Column(
           children: [
             CircleAvatar(
@@ -21,6 +21,20 @@ class BusinessCardApp extends StatelessWidget {
                 radius: 108,
                 backgroundImage:
                     AssetImage("Assets/Images/received_4891786670929918.jpeg"),
+              ),
+            ),
+            Text(
+              "Ali Kasrawy",
+              style: TextStyle(
+                fontSize: 32,
+                fontFamily: 'Pacifico',
+              ),
+            ),
+            Text(
+              "Flutter Developer",
+              style: TextStyle(
+                fontSize: 18,
+                color: Colors.grey,
               ),
             )
           ],
